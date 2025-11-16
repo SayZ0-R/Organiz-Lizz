@@ -1,0 +1,1426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFF8E7;
+}
+
+
+header {
+    background-color: #d7b98d;
+}
+
+.banner-principal {
+    width: 100%;
+}
+
+.irprodutos {
+    color: aliceblue;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 269px;
+    height: 62px;
+    border-radius: 35px;
+    border-color: #FFF8E7;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Stack Sans Notch", sans-serif;
+    background-color: #d7b98d
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.irprodutos {
+    /* Seus estios atuais */
+    transition: all 0.4s ease;
+}
+
+.scroll-lento {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.8s ease;
+}
+
+.parte-produtos {
+    color: #126B42;
+    text-align: right;
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.titulo-produtos {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    background: none;
+}
+
+.antigo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff6161;
+    text-align: center;
+    text-decoration: line-through;
+    margin: 5px 0;
+    background: none;
+}
+
+.novo {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+    line-height: 1.3;
+    background: none;
+}
+
+.preco {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    background: none;
+}
+
+.avista {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 8px 0;
+    line-height: 1.3;
+    text-transform: uppercase;
+    background: none;
+}
+
+.comprar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.org {
+    background: none;
+    transform: translateY(54%);
+}
+
+.org2 {
+    background: none;
+    transform: translateY(102%);
+}
+
+.org3 {
+    background: none;
+    transform: translateY(88%);
+}
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    padding: 40px;
+}
+
+.card {
+    width: 340px;
+    height: 720px;
+    background-color: #126B42;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza tudo horizontalmente */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.orgaicfrasco {
+    background: none;
+    width: 180px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-12px, 15%);
+}
+
+.frasco2 {
+    width: 300px;
+    height: 200px;
+    background: none;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(45%);
+}
+
+.provas {
+    transform: translateY(50px);
+}
+
+.subtitulo {
+    color: #126B42;
+    text-align: right;
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 619px;
+    margin: 120px auto 0 auto;
+    transform: translateX(-280px);
+}
+
+.texto-explicativo {
+    font-size: 20px;
+}
+
+.carrosel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+    transform: translate(240%, -535px);
+}
+
+.conteiner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 3150px;
+    /* 450px * 7 imagens */
+}
+
+.imgs {
+    object-fit: cover;
+    height: 450px;
+    width: 450px;
+    flex-shrink: 0;
+    /* importante */
+}
+
+
+/* Importação das Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Estilos da Seção Anvisa */
+.anvisa-section {
+    padding: 50px 20px;
+    text-align: center;
+    transform: translateX(-15%);
+}
+
+.anvisa-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.anvisa-logo {
+    margin-bottom: 30px;
+}
+
+.anvisa-logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.anvisa-title h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.anvisa-processo p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    margin: 0 0 25px 0;
+    letter-spacing: 0.5px;
+}
+
+.anvisa-descricao p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/* Primeira Linha - Conteúdo Principal */
+.rodape-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+    background: #000000 !important;
+}
+
+.coluna {
+    background: #000000 !important;
+    flex: 1;
+}
+
+.logo-container {
+    background: #000000 !important;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    background: #000000 !important;
+}
+
+.copyright {
+    background: #000000 !important;
+}
+
+.copyright-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff !important;
+    line-height: 1.5;
+    margin: 0;
+    background: #000000 !important;
+}
+
+.copyright-text b {
+    font-weight: 700;
+    color: #ffffff !important;
+    background: #000000 !important;
+}
+
+.titulo-coluna {
+    
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    background: #000000 !important;
+    display: inline-block;
+    padding: 2px 5px;
+    
+}
+
+.titulo-coluna1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    background: #000000 !important;
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.conteudo-coluna {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff !important;
+    background: #000000 !important;
+}
+
+.conteudo-coluna p {
+    margin: 5px 0;
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.telefone {
+    font-weight: 500;
+    color: #ffffff !important;
+    margin-top: 10px;
+    background: #000000 !important;
+}
+
+.link-rodape {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff !important;
+    margin-bottom: 10px;
+    background: #000000 !important;
+}
+
+.link-rodape a {
+    color: #ffffff !important;
+    text-decoration: none;
+    background: #000000 !important;
+}
+
+/* Segunda Linha - Informações Adicionais */
+.rodape-secundario {
+    background: #000000 !important;
+    padding: 30px 0;
+    border-top: 1px solid #333333;
+}
+
+.container-secundario {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    background: #000000 !important;
+}
+
+.coluna-secundaria {
+    background: #000000 !important;
+    flex: 2;
+}
+
+.coluna-secundaria.centralizada {
+    text-align: center;
+    flex: 1;
+}
+
+.titulo-secundario {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-bottom: 10px;
+    background: #000000 !important;
+}
+
+.texto-secundario {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff !important;
+    background: #000000 !important;
+}
+
+.texto-secundario p {
+    margin: 5px 0;
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.imagem-secundaria {
+    background: #000000 !important;
+}
+
+.imagem-pagamento {
+    max-width: 180px;
+    height: auto;
+    background: #000000 !important;
+}
+
+.imagem-seguranca {
+    max-width: 120px;
+    height: auto;
+    background: #000000 !important;
+}
+
+/* Terceira Linha - Selos de Segurança */
+.rodape-selos {
+    background: #000000 !important;
+    padding: 20px 0;
+    border-top: 1px solid #333333;
+}
+
+.container-selos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: #000000 !important;
+}
+
+.selo-container {
+    background: #000000 !important;
+    margin-bottom: 15px;
+}
+
+.selo-seguranca {
+    max-width: 400px;
+    height: auto;
+    background: #000000 !important;
+}
+
+.selo-compra {
+    max-width: 300px;
+    height: auto;
+    background: #000000 !important;
+}
+
+/* Quarta Linha - Copyright Final */
+.rodape-final {
+    background: #000000 !important;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333333;
+}
+
+.container-final {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #000000 !important;
+}
+
+.copyright-final {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #ffffff !important;
+    margin: 0;
+    background: #000000 !important;
+}
+
+
+@media screen and (max-width: 380px) and (Orientation:portrait) {
+
+    .irprodutos {
+        display: none;
+    }
+
+    .parte-produtos {
+        font-size: 25px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        height: 600px;
+        padding: 15px;
+    }
+
+    .org {
+        transform: translateY(30%);
+        width: 220px;
+        height: 150px;
+    }
+
+    .org2 {
+        transform: translateY(85%);
+        width: 220px;
+        height: 150px;
+    }
+
+    .org3 {
+        transform: translateY(75%);
+        width: 220px;
+        height: 150px;
+    }
+
+    .orgaicfrasco {
+        width: 140px;
+        height: 230px;
+        transform: translate(-10px, 12%);
+    }
+
+    .frasco2 {
+        width: 220px;
+        height: 150px;
+        transform: translateY(35%);
+    }
+
+    .preco {
+        font-size: 32px;
+    }
+
+    .comprar {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .titulo-produtos {
+        font-size: 20px;
+    }
+
+    .antigo,
+    .novo,
+    .avista {
+        font-size: 15px;
+    }
+        .provas {
+            transform: translateY(0);
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .subtitulo {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .exp {
+            width: 100%;
+            margin: 60px auto 0 auto;
+            transform: translateX(0);
+            padding: 0 15px;
+            gap: 15px;
+        }
+
+        .texto-explicativo {
+            font-size: 16px;
+        }
+
+           .carrosel {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        transform: translate(0px, -10px);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .conteiner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 2100px; /* 300px * 7 */
+        height: 100%;
+    }
+
+    .imgs {
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+        object-fit: cover;
+        display: block;
+    }
+
+        /* Seção Anvisa */
+        .anvisa-section {
+            transform: translateX(0);
+            padding: 40px 15px;
+        }
+
+        .anvisa-title h2 {
+            font-size: 22px;
+        }
+
+        .anvisa-logo img {
+            max-width: 160px;
+        }
+
+        .anvisa-descricao p {
+            font-size: 16px;
+        }
+
+        .anvisa-processo p {
+            font-size: 14px;
+        }
+    
+    
+        .rodape {
+        padding: 30px 15px;
+    }
+    
+    /* Primeira Linha - Conteúdo Principal */
+    .rodape-principal {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .coluna {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    .copyright-text {
+        font-size: 13px;
+    }
+    
+    .titulo-coluna,
+    .titulo-coluna1 {
+        font-size: 15px;
+        display: block;
+        padding: 5px 0;
+    }
+    
+    .conteudo-coluna {
+        font-size: 13px;
+    }
+    
+    .link-rodape {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    /* Segunda Linha - Informações Adicionais */
+    .rodape-secundario {
+        padding: 20px 0;
+    }
+    
+    .container-secundario {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .coluna-secundaria {
+        width: 100%;
+    }
+    
+    .coluna-secundaria.centralizada {
+        text-align: center;
+    }
+    
+    .titulo-secundario {
+        font-size: 13px;
+    }
+    
+    .texto-secundario {
+        font-size: 11px;
+    }
+    
+    .imagem-pagamento {
+        max-width: 150px;
+    }
+    
+    .imagem-seguranca {
+        max-width: 100px;
+    }
+    
+    /* Terceira Linha - Selos de Segurança */
+    .rodape-selos {
+        padding: 15px 0;
+    }
+    
+    .selo-seguranca {
+        max-width: 300px;
+    }
+    
+    .selo-compra {
+        max-width: 250px;
+    }
+    
+    /* Quarta Linha - Copyright Final */
+    .rodape-final {
+        padding: 15px 0;
+    }
+    
+    .copyright-final {
+        font-size: 12px;
+    }
+}
+
+/* ===== MOBILE SMALL (até 480px) ===== */
+@media screen and (max-width: 480px) and (min-width: 381px) {
+    .irprodutos {
+    display: none;
+    }
+
+    .parte-produtos {
+        font-size: 28px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding: 22px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 310px;
+        height: 610px;
+        padding: 16px;
+    }
+
+    .org {
+        transform: translateY(50%);
+        width: 230px;
+        height: 155px;
+    }
+
+    .org2 {
+        transform: translateY(80%);
+        width: 230px;
+        height: 155px;
+    }
+
+    .org3 {
+        transform: translateY(70%);
+        width: 230px;
+        height: 155px;
+    }
+
+    .orgaicfrasco {
+        width: 145px;
+        height: 235px;
+        transform: translate(-9px, 11%);
+    }
+
+    .frasco2 {
+        width: 230px;
+        height: 155px;
+        transform: translateY(37%);
+    }
+
+    .preco {
+        font-size: 33px;
+    }
+
+    .comprar {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .titulo-produtos {
+        font-size: 20px;
+    }
+
+    .antigo,
+    .novo,
+    .avista {
+        font-size: 15px;
+    }
+
+    .provas {
+        transform: translateY(15px);
+        width: 100%;
+        padding: 0 18px;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .exp {
+        width: 95%;
+        margin: 65px auto 0 auto;
+        transform: translateX(0);
+        padding: 0 18px;
+        gap: 16px;
+    }
+
+    .texto-explicativo {
+        font-size: 16px;
+    }
+
+    .carrosel {
+        width: 100%;
+        max-width: 320px;
+        height: 320px;
+        transform: translate(5px, -3%);
+        margin: 0 auto;
+    }
+
+    .conteiner {
+        width: 2240px;
+    }
+
+    .imgs {
+        height: 320px;
+        width: 320px;
+    }
+
+    .anvisa-section {
+        transform: translateX(0);
+        padding: 38px 16px;
+    }
+
+    .anvisa-title h2 {
+        font-size: 23px;
+    }
+
+    .anvisa-logo img {
+        max-width: 165px;
+    }
+
+    .anvisa-descricao p {
+        font-size: 16px;
+    }
+
+    .anvisa-processo p {
+        font-size: 14px;
+    }
+
+    /* Rodapé Mobile Small */
+    .rodape {
+        padding: 28px 16px;
+    }
+
+    .rodape-principal {
+        flex-direction: column;
+        gap: 28px;
+        margin-bottom: 28px;
+    }
+
+    .coluna {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 125px;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+    }
+
+    .titulo-coluna,
+    .titulo-coluna1 {
+        font-size: 15px;
+        display: block;
+        padding: 4px 0;
+    }
+
+    .conteudo-coluna {
+        font-size: 13px;
+    }
+
+    .link-rodape {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .container-secundario {
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+    }
+
+    .coluna-secundaria {
+        width: 100%;
+    }
+
+    .titulo-secundario {
+        font-size: 13px;
+    }
+
+    .texto-secundario {
+        font-size: 11px;
+    }
+
+    .imagem-pagamento {
+        max-width: 155px;
+    }
+
+    .imagem-seguranca {
+        max-width: 102px;
+    }
+
+    .selo-seguranca {
+        max-width: 310px;
+    }
+
+    .selo-compra {
+        max-width: 260px;
+    }
+
+    .copyright-final {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .irprodutos {
+        display: none;
+    }
+
+    .parte-produtos {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        height: 620px;
+        padding: 18px;
+    }
+
+    .org {
+        transform: translateY(50%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .org2 {
+        transform: translateY(82%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .org3 {
+        transform: translateY(72%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .orgaicfrasco {
+        width: 150px;
+        height: 240px;
+        transform: translate(-8px, 10%);
+    }
+
+    .frasco2 {
+        width: 240px;
+        height: 160px;
+        transform: translateY(36%);
+    }
+
+    .preco {
+        font-size: 34px;
+    }
+
+    .comprar {
+        padding: 13px 26px;
+        font-size: 14px;
+    }
+
+    .titulo-produtos {
+        font-size: 21px;
+    }
+
+    .antigo,
+    .novo,
+    .avista {
+        font-size: 15px;
+    }
+
+    .provas {
+        transform: translateY(20px);
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .subtitulo {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .exp {
+        width: 90%;
+        margin: 70px auto 0 auto;
+        transform: translateX(0);
+        padding: 0 20px;
+        gap: 18px;
+    }
+
+    .texto-explicativo {
+        font-size: 17px;
+    }
+
+    .carrosel {
+        width: 100%;
+        max-width: 340px;
+        height: 340px;
+        transform: translate(5px, -10px);
+        margin: 0 auto;
+    }
+
+    .conteiner {
+        width: 2380px;
+    }
+
+    .imgs {
+        height: 340px;
+        width: 340px;
+    }
+
+    .anvisa-section {
+        transform: translateX(0);
+        padding: 40px 18px;
+    }
+
+    .anvisa-title h2 {
+        font-size: 24px;
+    }
+
+    .anvisa-logo img {
+        max-width: 170px;
+    }
+
+    .anvisa-descricao p {
+        font-size: 16px;
+    }
+
+    .anvisa-processo p {
+        font-size: 14px;
+    }
+
+    /* Rodapé Mobile Large */
+    .rodape {
+        padding: 30px 18px;
+    }
+
+    .rodape-principal {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .coluna {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 125px;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+    }
+
+    .titulo-coluna,
+    .titulo-coluna1 {
+        font-size: 15px;
+        display: block;
+        padding: 4px 0;
+    }
+
+    .conteudo-coluna {
+        font-size: 13px;
+    }
+
+    .link-rodape {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .container-secundario {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .coluna-secundaria {
+        width: 100%;
+    }
+
+    .titulo-secundario {
+        font-size: 13px;
+    }
+
+    .texto-secundario {
+        font-size: 11px;
+    }
+
+    .imagem-pagamento {
+        max-width: 160px;
+    }
+
+    .imagem-seguranca {
+        max-width: 105px;
+    }
+
+    .selo-seguranca {
+        max-width: 320px;
+    }
+
+    .selo-compra {
+        max-width: 270px;
+    }
+
+    .copyright-final {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .irprodutos {
+        display: none;
+    }
+
+    .parte-produtos {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        height: 620px;
+        padding: 18px;
+    }
+
+    .org {
+        transform: translateY(45%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .org2 {
+        transform: translateY(85%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .org3 {
+        transform: translateY(75%);
+        width: 240px;
+        height: 160px;
+    }
+
+    .orgaicfrasco {
+        width: 150px;
+        height: 240px;
+        transform: translate(-8px, 10%);
+    }
+
+    .frasco2 {
+        width: 240px;
+        height: 160px;
+        transform: translateY(36%);
+    }
+
+    .preco {
+        font-size: 34px;
+    }
+
+    .comprar {
+        padding: 13px 26px;
+        font-size: 14px;
+    }
+
+    .titulo-produtos {
+        font-size: 21px;
+    }
+
+    .antigo,
+    .novo,
+    .avista {
+        font-size: 15px;
+    }
+
+    .provas {
+        transform: translateY(0);
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .subtitulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .exp {
+        width: 90%;
+        margin: 60px auto 0 auto;
+        transform: translateX(0);
+        padding: 0 20px;
+        gap: 18px;
+    }
+
+    .texto-explicativo {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .carrosel {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+        transform: translate(0, -10px);
+        margin: 0 auto;
+    }
+
+    .conteiner {
+        width: 2450px; /* 350px * 7 */
+    }
+
+    .imgs {
+        height: 350px;
+        width: 350px;
+    }
+
+    .anvisa-section {
+        transform: translateX(0);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .anvisa-title h2 {
+        font-size: 24px;
+    }
+
+    .anvisa-logo img {
+        max-width: 170px;
+    }
+
+    .anvisa-descricao p {
+        font-size: 16px;
+    }
+
+    .anvisa-processo p {
+        font-size: 14px;
+    }
+
+    /* Rodapé Tablets em Coluna */
+    .rodape {
+        padding: 30px 20px;
+    }
+
+    .rodape-principal {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .coluna {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+    }
+
+    .titulo-coluna,
+    .titulo-coluna1 {
+        font-size: 15px;
+        display: block;
+        padding: 4px 0;
+    }
+
+    .conteudo-coluna {
+        font-size: 13px;
+    }
+
+    .link-rodape {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .container-secundario {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .coluna-secundaria {
+        width: 100%;
+    }
+
+    .titulo-secundario {
+        font-size: 13px;
+    }
+
+    .texto-secundario {
+        font-size: 11px;
+    }
+
+    .imagem-pagamento {
+        max-width: 160px;
+    }
+
+    .imagem-seguranca {
+        max-width: 105px;
+    }
+
+    .selo-seguranca {
+        max-width: 320px;
+    }
+
+    .selo-compra {
+        max-width: 270px;
+    }
+
+    .copyright-final {
+        font-size: 12px;
+    }
+}
+
